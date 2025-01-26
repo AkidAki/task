@@ -1,0 +1,80 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('ManageAccountbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title and Subtitle */
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+}
+
+/* Search Form Styles */
+.search-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+}
+.search-bar button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+/* Add Employee Form Styles */
+form {
+    text-align: center;
+    margin: 20px auto;
+}
+form input, form button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+form input {
+    width: 200px;
+}
+form button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #218838;
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    color: #fff;
+}
+th {
+    background-color: #333;
+}
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

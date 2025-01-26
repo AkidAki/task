@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Intro Page</title>
+    <!-- External Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Background */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            height: 100vh;
+            background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: orange;
+        }
+
+        /* Main Container */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        /* Group Name Styling */
+        .group-name {
+            font-size: 4rem;
+            font-weight: 700;
+            text-align: right;
+            flex: 1;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Button Styling */
+        .next-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+            margin-top: 20px;
+        }
+
+        .next-button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Right Aligned Group Name -->
+        <div class="group-name">
+            Task Management
+        </div>
+        <!-- Navigation Button -->
+        <div>
+            <a href="Homepage.html" class="next-button">Go to Next Page</a>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth button transition (optional)
+        document.querySelector('.next-button').addEventListener('click', (e) => {
+            e.preventDefault();
+            const url = e.target.href;
+            document.body.style.opacity = 0;
+            setTimeout(() => window.location.href = url, 500);
+        });
+    </script>
+</body>
+</html>
